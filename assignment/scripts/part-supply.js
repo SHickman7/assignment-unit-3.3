@@ -32,10 +32,15 @@ console.log('4. Remove the last value from supplyChanges:');
 
 let removedItem = supplyChanges.pop();
 console.log ( 'The value of removedItem is:', removedItem);
-
+console.log ( 'The updated values of the supplyChanges array are:',supplyChanges);
 
 // 5. A delivery of 25 more parts arrived. Add the value 25 to the end of the array
 console.log('5. Add the value 25 into supplyChanges.');
+
+supplyChanges.push(25);
+console.log( 'The updated value of the supplyChanges array is:', supplyChanges);
+
+
 
 
 // 6. Create three new variables named 'positives', 'negatives', and
