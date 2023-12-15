@@ -80,7 +80,7 @@ let stretchPositives = [ ];
 let stretchNegatives = [ ];
 let stretchZeroes = [ ];
 
-for ( number of supplyChanges ){
+for ( let number of supplyChanges ){
   if ( number > 0 ){
     stretchPositives.push( number )
   } else if (number < 0 ) {
@@ -97,6 +97,13 @@ console.log ( 'The values in the zeroes array are', stretchZeroes);
 //    Then, write a loop that adds each value of the 'supplyChanges'
 //    array to the 'totalParts' variable.
 console.log('8. Looping through supplyChanges to calculate the sum:');
+
+let totalParts = 0;
+
+for (let part of supplyChanges){
+  totalParts += part;
+}
+console.log( 'The value of total parts is', totalParts);
 
 
 // 9. We have a large stash of parts in our warehouse that we 
