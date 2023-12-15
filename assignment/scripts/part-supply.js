@@ -42,7 +42,6 @@ console.log( 'The updated value of the supplyChanges array is:', supplyChanges);
 
 
 
-
 // 6. Create three new variables named 'positives', 'negatives', and
 //    'zeroes' whose values are empty arrays. Then, write a for loop
 //    that loops through the 'supplyChanges' array. For each iteration of
@@ -52,8 +51,22 @@ console.log( 'The updated value of the supplyChanges array is:', supplyChanges);
 //      - If the value is a zero, push it into the 'zeroes' array.
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
 
+let positives = [ ];
+let negatives = [ ];
+let zeroes = [ ];
 
-
+for ( number of supplyChanges ){
+  if ( number > 0 ){
+    positives.push( number )
+  } else if (number < 0 ) {
+    negatives.push( number )
+  } else {
+    zeroes.push( number )
+  }
+}
+console.log ( 'The values in the positives array are:', positives);
+console.log ( 'The values in the negatives array are', negatives);
+console.log ( 'The values in the zeroes array are', zeroes);
 
 // ***** STRETCH GOALS *********************************************
 // 7. Rewrite the 'for' loop from #6 as a 'for...of' loop. Instead of 'positives',
