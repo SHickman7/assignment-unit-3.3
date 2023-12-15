@@ -22,6 +22,9 @@ console.log('Values in supplyChanges array', supplyChanges);
 //    item in the 'supplyChanges' array.
 console.log('3. Access the second value of supplyChanges:');
 
+let secondItem = supplyChanges[ 1 ];
+console.log ( 'The value of secondItem is:', secondItem);
+
 
 // 4. The last value in the 'supplyChanges' array was added by mistake.
 //    Remove it from the array and store it inside a new variable called 'removedItem'.
